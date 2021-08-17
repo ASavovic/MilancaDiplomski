@@ -1,0 +1,18 @@
+Starting API:
+- Install dotnet
+- Install sql server express
+- dotnet tool install --global dotnet-ef
+
+Position in the project 
+- dotnet-ef database update
+- dotnet build
+- dotnet run
+
+if all previous is successfully executed swager will be running at https://localhost:5001/swagger/index.html
+
+Starting Web:
+
+After opening project in editor run command "npm i " 
+to install all necessary packages. After that run command "npm run start"
+
+Test app will be running at http://localhost:4200/

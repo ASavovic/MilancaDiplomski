@@ -1,0 +1,14 @@
+<div class="page-content">
+    <div>
+        <app-dropzone (upload)="refreshFilesInTables()"></app-dropzone>
+    </div >
+    <div *ngIf="files.length!==0">
+        <div *ngIf="refreshing">Refreshing...</div>
+    <app-file-table  *ngFor="let fileCollection of files" [fileElements]="fileCollection" ></app-file-table>
+    </div>
+    <div *ngIf="files.length===0" class="no-files-to-display">
+        <div *ngIf="refreshing">Loading...</div>
+        <img src="assets/cloud-icon.png" />
+        No files uploaded yet. Take the first step, upload the file and let the fun begin.
+    </div>
+</div>
