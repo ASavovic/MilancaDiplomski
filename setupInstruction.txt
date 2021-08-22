@@ -8,10 +8,11 @@ Position in the project
 - dotnet build
 - dotnet run
 
-if all previous is successfully executed swager will be running at https://localhost:5001/swagger/index.html
+if all previous is successfully executed swager will be running at localhost
 
 Starting Web:
 
+in envirnoment file "apiBaseUrl" should be same as port on which api is runnung,
 After opening project in editor run command "npm i " 
 to install all necessary packages. After that run command "npm run start"
 

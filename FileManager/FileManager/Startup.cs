@@ -41,9 +41,13 @@ namespace FileManager
 
             services.AddCors(options => {
                 options.AddPolicy("CORS", builder => {
+                    
                     builder.AllowAnyHeader()
+                    .WithOrigins("https://localhost:5001/")
                            .AllowAnyMethod()
+                           .SetIsOriginAllowed(origin => true) // allow any origin
                            .AllowAnyOrigin();
+
                 });
             });
         }

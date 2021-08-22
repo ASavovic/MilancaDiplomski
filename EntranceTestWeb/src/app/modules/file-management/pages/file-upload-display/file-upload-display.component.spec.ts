@@ -35,4 +35,8 @@ describe('FileUploadDisplayComponent', () => {
     expect(component.getExtensionOfFile("random.name.of.file.txt")).toBe('.file');
   });
 
+  it('test function refreshFilesInTables', () => {
+    expect(component.refreshFilesInTables()).toBe([]);
+  });
+
 });

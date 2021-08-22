@@ -1,11 +1,23 @@
+@import "../../styles/color-definitions.scss";
+
 table {
-    width: 100%;
+  width: 100%;
+}
+
+.mat-elevation-z8 {
+  overflow-x: scroll;
+  margin-bottom: 16px;
+  > table {
+    min-width: 500px;
   }
-  
-  .mat-elevation-z8{
-    overflow-x: scroll;
-    margin-bottom: 16px;
-    >table{
-      min-width: 500px;
-    }
+}
+
+.download {
+  text-align: center;
+  > div {
+    cursor: pointer;
   }
+  > img {
+    color: $green;
+  }
+}

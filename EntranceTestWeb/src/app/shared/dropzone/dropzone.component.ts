@@ -2,6 +2,7 @@ import { HttpClient, HttpEventType } from '@angular/common/http';
 import { Component, OnInit, Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';   
+import { FilesService } from '../../services/files.service';
 
 @Component({
   selector: 'app-dropzone',
@@ -10,7 +11,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class DropzoneComponent implements OnInit {
   @Output () upload:EventEmitter<File>=new EventEmitter();
-  constructor( private _http: HttpClient,
+  constructor( private readonly _filesServide: FilesService,
     private toastr: ToastrService) { }
 
   
@@ -41,10 +42,7 @@ export class DropzoneComponent implements OnInit {
     for (const item of files) {
       item.progress = 0;
       this.files.push(item);
-      const formData = new FormData();
-      formData.append('file', item, item.name);
-      this._http.post('https://localhost:5001/api/files', formData, {reportProgress: true, observe: 'events'})
-      .subscribe(event => {
+      this._filesServide.uploadFile(item).subscribe(event => {
         if (event.type === HttpEventType.UploadProgress){
 
           if(event &&  event?.loaded && event?.total)

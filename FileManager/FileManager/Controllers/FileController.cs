@@ -2,6 +2,7 @@
 using FileManager.Repositories;
 using FileManager.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,6 @@ namespace FileManager.Controllers
         private readonly IFileRepository _fileRepository;
         private readonly IFileManagerService _fileManagerService;
         private readonly IConfiguration _configuration;
-
         public FileController(DatabaseContext context, IFileManagerService fileManagerService, IConfiguration configuration)
         {
             _fileRepository = new FileRepository(context);
@@ -38,11 +38,19 @@ namespace FileManager.Controllers
         public async Task<ActionResult<ActionResult<Entities.File>>> Show(int id)
         {
             var file = await _fileRepository.GetFile(id);
-            if (file == null)
-                return new NotFoundResult();
 
-            return new ObjectResult(file);
+            var filePath = file.Path;
+            if (!System.IO.File.Exists(filePath))
+                return NotFound();
+            var memory = new MemoryStream();
+            await using (var stream = new FileStream(filePath, FileMode.Open))
+            {
+                await stream.CopyToAsync(memory);
+            }
+            memory.Position = 0;
+            return File(memory, file.GetContentType(filePath), filePath);
         }
+
 
         // <ActionResult<Entities.File>>
         [HttpPost, DisableRequestSizeLimit]
