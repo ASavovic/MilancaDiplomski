@@ -50,7 +50,7 @@ export class DropzoneComponent implements OnInit {
             item.progress = Math.round(100 * event?.loaded /event?.total );
             if (event.loaded ===event.total){
               this.toastr.success("File succesfully uploaded!",'Success');
-              this.callParent();
+              
             }
           } 
         }
@@ -59,7 +59,9 @@ export class DropzoneComponent implements OnInit {
       console.log(error);
       this.toastr.error(error.message,'Error');
       this.files.pop();
-    });
+    }).add(() => {
+      this.callParent();
+ });;
   }
   
   }
