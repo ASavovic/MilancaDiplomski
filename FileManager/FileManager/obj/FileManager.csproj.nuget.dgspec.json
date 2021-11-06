@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\savov\\OneDrive\\Desktop\\EntranceTestApp\\FileManager\\FileManager\\FileManager.csproj": {}
+    "C:\\Users\\savov\\OneDrive\\Documents\\enterancetestapp\\FileManager\\FileManager\\FileManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\savov\\OneDrive\\Desktop\\EntranceTestApp\\FileManager\\FileManager\\FileManager.csproj": {
+    "C:\\Users\\savov\\OneDrive\\Documents\\enterancetestapp\\FileManager\\FileManager\\FileManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\savov\\OneDrive\\Desktop\\EntranceTestApp\\FileManager\\FileManager\\FileManager.csproj",
+        "projectUniqueName": "C:\\Users\\savov\\OneDrive\\Documents\\enterancetestapp\\FileManager\\FileManager\\FileManager.csproj",
         "projectName": "FileManager",
-        "projectPath": "C:\\Users\\savov\\OneDrive\\Desktop\\EntranceTestApp\\FileManager\\FileManager\\FileManager.csproj",
+        "projectPath": "C:\\Users\\savov\\OneDrive\\Documents\\enterancetestapp\\FileManager\\FileManager\\FileManager.csproj",
         "packagesPath": "C:\\Users\\savov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\savov\\OneDrive\\Desktop\\EntranceTestApp\\FileManager\\FileManager\\obj\\",
+        "outputPath": "C:\\Users\\savov\\OneDrive\\Documents\\enterancetestapp\\FileManager\\FileManager\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\savov\\AppData\\Roaming\\NuGet\\NuGet.Config",

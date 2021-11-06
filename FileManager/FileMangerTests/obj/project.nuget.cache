@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YA3ZmzJ3u7G5+aXZgdATw76WwyGUVDGq+V4c5uZ6RsBeLeS5GbiGqGHoXsPLJFYDCaVxJIzfcW/2GRr9qFPHJw==",
+  "dgSpecHash": "kGX62SGGccNGf2jXCqeKBm7XjSasJYnAOfsETMGqm6qZzIbHO+Zks6uvfHb/190+ey11W6eB0BllQkWVg7XscA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\savov\\OneDrive\\Desktop\\EntranceTestApp\\FileManager\\FileMangerTests\\FileMangerTests.csproj",
+  "projectFilePath": "C:\\Users\\savov\\OneDrive\\Documents\\enterancetestapp\\FileManager\\FileMangerTests\\FileMangerTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\savov\\.nuget\\packages\\castle.core\\4.3.1\\castle.core.4.3.1.nupkg.sha512",
     "C:\\Users\\savov\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",

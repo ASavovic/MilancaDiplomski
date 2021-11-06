@@ -1,0 +1,40 @@
+<div class="page-content">
+  <span>Date From:</span>
+  <ejs-datetimepicker [(value)]="dateStart" [max]="today"></ejs-datetimepicker>
+  <p> </p>
+  <span>Date To:</span>
+  <ejs-datetimepicker [(value)]="dateEnd" [min]="today"></ejs-datetimepicker>
+  <p> </p>
+  <div class='filtering-buttons-container'>
+    <div>
+      <button mat-raised-button color="accent" (click)="onFilterSelectedRange()">Filter Selected Range</button>
+    </div>
+    <div>
+      <button mat-stroked-button color="accent" (click)="onLastDayCLick()">Last Day</button>
+      <button mat-stroked-button color="primary" (click)="onLastSevenDaysClick()">Last Week</button>
+      <button mat-stroked-button color="accent" (click)="onLastMonthClick()">Last Month</button>
+      <button mat-stroked-button color="warn" (click)="onLastYearClick()">Last Year</button>
+      <button mat-stroked-button (click)="onLifetimeClick()">Lifetime</button>
+    </div>
+  </div>
+  <p> </p>
+  <ngx-charts-line-chart *ngIf='multi.length!==0'
+    [view]="view"
+    [legend]="legend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxis]="xAxis"
+    [yAxis]="yAxis"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    [timeline]="timeline"
+    [results]="multi"
+    (select)="onSelect($event)"
+    (activate)="onActivate($event)"
+    (deactivate)="onDeactivate($event)"
+  ></ngx-charts-line-chart>
+  <div *ngIf='multi.length===0' class="icon-container"><img src="assets/cloud-icon.png">
+    <h3>No data captured in selected time range.</h3>
+    <h3 *ngIf='loading'>Loading...</h3>
+  </div>
+</div>

@@ -24,6 +24,7 @@ export class FileUploadDisplayComponent implements OnInit {
   }
 
   refreshFilesInTables(): any {
+    console.log("Works")
     this.refreshing = true;
     this._filesService
       .getAllFiles()

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i6RYU1WqZJ/BGGEcObvJl+Viah8VpUhMUybsP10R6WZnTkqBG6W0ZLOzEMQwsQ+SvnqA2wml7sVVR9CljiMV4g==",
+  "dgSpecHash": "VyUit2nCeLEFvqyPmFMWkfAPFl2BPbrC5TQ4NEcVkv356thEPeytuL17kbTCYIhVS1BJGqq+n66dGlzf33FW7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\savov\\OneDrive\\Desktop\\EntranceTestApp\\FileManager\\FileManager\\FileManager.csproj",
+  "projectFilePath": "C:\\Users\\savov\\OneDrive\\Documents\\enterancetestapp\\FileManager\\FileManager\\FileManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\savov\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\savov\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.0\\microsoft.aspnetcore.authentication.jwtbearer.5.0.0.nupkg.sha512",
