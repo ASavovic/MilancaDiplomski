@@ -4,6 +4,7 @@ import { FileManagementMainComponent } from './pages/file-management-main/file-m
 import { FileUploadDisplayComponent } from './pages/file-upload-display/file-upload-display.component';
 import { GraphComponent } from './pages/graph/graph.component';
 import { MemoryUsageComponent } from './pages/memory-usage/memory-usage.component';
+import { RealTimeGraphComponent } from './pages/real-time-graph/real-time-graph.component';
 import { ScreenshootsComponent } from './pages/screenshoots/screenshoots.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 
@@ -31,6 +32,10 @@ const routes: Routes = [
       {
         path: 'screenshoots',
         component: ScreenshootsComponent,
+      },
+      {
+        path: 'real-time-graph',
+        component: RealTimeGraphComponent,
       },
       {
         path: '**',

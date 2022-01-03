@@ -14,6 +14,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { DateTimePickerModule } from '@syncfusion/ej2-angular-calendars';
 import {MatButtonModule} from '@angular/material/button';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { RealTimeGraphComponent } from './pages/real-time-graph/real-time-graph.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     SettingsComponent,
     GraphComponent,
     MemoryUsageComponent,
-    ScreenshootsComponent
+    ScreenshootsComponent,
+    RealTimeGraphComponent
   ],
   imports: [
     CommonModule,

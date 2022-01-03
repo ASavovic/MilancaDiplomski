@@ -44,6 +44,8 @@ export class GraphComponent implements OnInit {
     this.currentSecond
   );
   ngOnInit() {
+    console.log(this.dateStart.toUTCString(), this.dateEnd.toUTCString());
+    
     this.getData(this.dateStart.toUTCString(), this.dateEnd.toUTCString());
   }
   //graph options
@@ -78,6 +80,7 @@ export class GraphComponent implements OnInit {
   }
 
   onFilterSelectedRange() {
+    console.log(this.dateStart.toUTCString(), this.dateEnd.toUTCString());
     this.getData(this.dateStart.toUTCString(), this.dateEnd.toUTCString());
   }
 
@@ -98,7 +101,7 @@ export class GraphComponent implements OnInit {
         console.log(err);
       })
       .finally(() => {
-        this.multi = [];
+        //this.multi = [];
         this.loading = false;
       });
   }

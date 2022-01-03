@@ -20,6 +20,8 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@aspnet/signalr": "^1.0.27",
+    "@microsoft/signalr": "^6.0.1",
     "@swimlane/ngx-charts": "^19.0.1",
     "@syncfusion/ej2-angular-calendars": "^19.2.62",
     "angular-datetime-range": "^0.4.0",
@@ -45,5 +47,10 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.3.5",
     "@ionic/angular-toolkit": "latest"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.",
+  "main": "karma.conf.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

@@ -18,7 +18,7 @@
     </div>
   </div>
   <p> </p>
-  <ngx-charts-line-chart *ngIf='multi.length!==0'
+  <ngx-charts-line-chart
     [view]="view"
     [legend]="legend"
     [showXAxisLabel]="showXAxisLabel"
@@ -33,7 +33,7 @@
     (activate)="onActivate($event)"
     (deactivate)="onDeactivate($event)"
   ></ngx-charts-line-chart>
-  <div *ngIf='multi.length===0' class="icon-container"><img src="assets/cloud-icon.png">
+  <div  class="icon-container"><img src="assets/cloud-icon.png">
     <h3>No data captured in selected time range.</h3>
     <h3 *ngIf='loading'>Loading...</h3>
   </div>
